@@ -9,7 +9,8 @@ node {
    
    stage('Preparation') { // for display purposes
       // Get some code from a GitHub repository
-      git 'https://github.com/urestisandra/hello-world.git'
+      //git 'https://github.com/urestisandra/hello-world.git'
+      git 'https://github.com/urestisandra/a.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
       // **       in the global configuration.           
