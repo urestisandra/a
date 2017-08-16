@@ -10,21 +10,21 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.internal.AssumptionViolatedException;
 
 /**
  * @author d.serrano.parreno
  *
  */
 public class ShipTest {
-	protected void run() {		
-        	double r = Math.random();		
-        	if (r < 0.1) {		
-            	fail("oops");		
-        	} else if (r < 0.2) {		
-           	throw new AssumptionViolatedException("skipping");		
-        	}		
-   	 }	
-
+	protected void run() {
+        	double r = Math.random();
+        	if (r < 0.1) {
+            	fail("oops");
+        	} else if (r < 0.2) {
+           	throw new AssumptionViolatedException("skipping");
+        	}
+   	 }
 	/**
 	 * @throws java.lang.Exception
 	 */
@@ -55,8 +55,9 @@ public class ShipTest {
 
 	@Test
 	public void test() {
-		run();
-		//fail("Not yet implemented"); // TODO
+		run (); // TODO
 	}
+	
+	// to be implemented @Test 
 
 }
