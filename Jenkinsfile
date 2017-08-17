@@ -15,9 +15,9 @@ node {
       if (isUnix()) {
          sh "mvn -f /var/lib/jenkins/workspace/a/javadoctest/pom.xml -Dmaven.test.failure.ignore clean package"
       } else {
-         //bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
+         bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
          //bat(/"${mvnHome}\bin\mvn" "f /var/lib/jenkins/workspace/a/javadoctest/pom.xml" -Dmaven.test.failure.ignore clean package/)
-         bat(/""mvn -f "/var/lib/jenkins/workspace/a/javadoctest/pom.xml" -Dmaven.test.failure.ignore clean package/)
+         //bat(/""mvn -f "/var/lib/jenkins/workspace/a/javadoctest/pom.xml" -Dmaven.test.failure.ignore clean package/)
       }
    }
    stage('Results') {
