@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Hola</p>
+<p style="color:red;">Hello</p>
+<p style="color:blue;">Ciao</p>
+<p style="font-size:36px;">Gracias. Thank you. Grazie</p>
+
+</body>
+</html>
